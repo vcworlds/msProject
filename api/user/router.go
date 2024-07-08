@@ -20,5 +20,5 @@ func init() {
 func (*RouterUser) Route(r *gin.Engine) {
 	h := HandleFunc{}
 	// 注册 POST 路由，当访问 /api/project/login/getCaptcha 时调用 h.GetCaptcha 方法
-	r.POST("/api/project/login/getCaptcha", h.GetCaptcha)
+	r.GET("/api/project/login/getCaptcha", h.GetCaptcha)
 }
