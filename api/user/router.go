@@ -1,9 +1,18 @@
 package user
 
-import "github.com/gin-gonic/gin"
+import (
+	"github.com/gin-gonic/gin"
+	"log"
+	"msproject/router"
+)
 
 // RouterUser 是一个空的结构体
 type RouterUser struct {
+}
+
+func init() {
+	log.Print("init user router")
+	router.Register(&RouterUser{})
 }
 
 // Route 方法实现了 Router 接口

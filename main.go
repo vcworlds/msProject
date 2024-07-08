@@ -2,6 +2,7 @@ package main
 
 import (
 	"github.com/gin-gonic/gin"
+	_ "msproject/api/user"
 	"msproject/common"
 	"msproject/router"
 )
